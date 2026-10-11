@@ -221,7 +221,7 @@ section[id] {
   display: flex;
   align-items: stretch;
   overflow: hidden;
-  background: #111 url("img/banner.jpg") center / cover no-repeat;
+  background: #111 url("Assets/banner.jpg") center / cover no-repeat;
 }
 
 .home-banner::after {
