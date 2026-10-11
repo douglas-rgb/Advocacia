@@ -23,10 +23,12 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: var(--altura-header);
+    scroll-behavior: smooth !important;
+    scroll-padding-top: var(--altura-header);
 }
+
 
 body {
   min-width: 320px;
