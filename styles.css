@@ -240,7 +240,7 @@ section[id] {
   min-height: 100vh;
   min-height: 100svh;
   overflow: hidden;
-  background: #111 url("Assets/banner.jpg") center / cover no-repeat;
+  background: #111 url("assets/banner.jpg") center / cover no-repeat;
 }
 
 .home-banner::after {
