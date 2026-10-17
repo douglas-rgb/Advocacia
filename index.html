@@ -32,18 +32,20 @@
 
     <header class="header">
       <div class="logo-name">
-        <div class="logo">
-          <a href="#home">
-            <img src="assets/logo.png" alt="Logo do Escritório de Advocacia" />
-          </a>
-        </div>
+  <div class="logo">
+    <a href="#home">
+      <img
+        src="assets/logo.png"
+        alt="Logo do Escritório de Advocacia"
+      />
+    </a>
+  </div>
 
-        <div class="logo-text">
-          <h4>Douglas Santos</h4>
-
-          <p>Advogado</p>
-        </div>
-      </div>
+  <div class="logo-text">
+    <h4 id="nome-escritorio">Nome do Escritório</h4>
+    <p id="titulo-profissional">Advogado</p>
+  </div>
+</div>
 
       <!-- =========================
              MENU MOBILE
@@ -415,307 +417,346 @@
      SEÇÃO CONTATO
 ====================================================== -->
 
-      <section class="contato" id="contato">
-        <div class="contato-container">
-          <!-- =================================================
-             INFORMAÇÕES DE CONTATO
-        ================================================== -->
 
-          <div class="contato-info">
-            <span class="section-label"> FALE CONOSCO </span>
+<section class="contato" id="contato">
+  <div class="contato-container">
 
-            <h2>
-              Vamos conversar
-              <span>sobre o seu caso.</span>
-            </h2>
+    <!-- INFORMAÇÕES DE CONTATO -->
+    <div class="contato-info">
+      <span class="section-label">FALE CONOSCO</span>
 
-            <p class="contato-intro">
-              Conte-nos brevemente sobre sua situação. Nossa equipe está
-              preparada para entender suas necessidades e orientar você sobre os
-              próximos passos.
-            </p>
+      <h2>
+        Vamos conversar
+        <span>sobre o seu caso.</span>
+      </h2>
 
-            <!-- =================================================
-                 INFORMAÇÕES
-            ================================================== -->
+      <p class="contato-intro">
+        Conte-nos brevemente sobre sua situação. Nossa equipe está
+        preparada para entender suas necessidades e orientar você
+        sobre os próximos passos.
+      </p>
 
-            <div class="contato-dados">
-              <!-- WHATSAPP -->
+      <div class="contato-dados">
 
-              <div class="contato-dado">
-                <div class="contato-icon">☎</div>
-
-                <div>
-                  <span> WhatsApp </span>
-
-                  <a href="tel:+5511912824454"> (11) 91282-4454 </a>
-                </div>
-              </div>
-
-              <!-- E-MAIL -->
-
-              <div class="contato-dado">
-                <div class="contato-icon">@</div>
-
-                <div>
-                  <span> E-mail </span>
-
-                  <a href="mailto:contato@seuescritorio.com.br">
-                    contato@seuescritorio.com.br
-                  </a>
-                </div>
-              </div>
-
-              <!-- HORÁRIO -->
-
-              <div class="contato-dado">
-                <div class="contato-icon">◷</div>
-
-                <div>
-                  <span> Atendimento </span>
-
-                  <p>
-                    Segunda a sexta
-                    <br />
-                    09h às 18h
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- =================================================
-                 BOTÃO WHATSAPP
-            ================================================== -->
-
-            <a
-              href="https://wa.me/5511912824454"
-              class="contato-whatsapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-whatsapp
-              data-mensagem="Olá! Gostaria de entrar em contato com o escritório."
-            >
-              <span>Falar pelo WhatsApp</span>
-              <strong> → </strong>
+        <!-- TELEFONE -->
+        <div class="contato-dado">
+          <div class="contato-icon" aria-hidden="true">☎</div>
+          <div>
+            <span>Telefone</span>
+            <a href="#" data-config="telefone">
+              (11) 00000-0000
             </a>
           </div>
+        </div>
 
-          <!-- =================================================
-             FORMULÁRIO
-        ================================================== -->
-
-          <div class="contato-form-container">
-            <form class="contato-form" id="contato-form">
-              <!-- NOME -->
-
-              <div class="form-group">
-                <label for="nome"> Nome </label>
-
-                <input
-                  type="text"
-                  id="nome"
-                  name="nome"
-                  placeholder="Digite seu nome"
-                  autocomplete="name"
-                />
-              </div>
-
-              <!-- E-MAIL -->
-
-              <div class="form-group">
-                <label for="email"> E-mail </label>
-
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Digite seu e-mail"
-                  autocomplete="email"
-                />
-              </div>
-
-              <!-- TELEFONE -->
-
-              <div class="form-group">
-                <label for="telefone"> Telefone </label>
-
-                <input
-                  type="tel"
-                  id="telefone"
-                  name="telefone"
-                  placeholder="(11) 99999-9999"
-                  autocomplete="tel"
-                />
-              </div>
-
-              <!-- ASSUNTO -->
-
-              <div class="form-group">
-                <label for="assunto"> Assunto </label>
-
-                <select id="assunto" name="assunto">
-                  <option value="">Selecione uma opção</option>
-
-                  <option value="civil">Direito Civil</option>
-
-                  <option value="familia">Direito de Família</option>
-
-                  <option value="trabalhista">Direito Trabalhista</option>
-
-                  <option value="previdenciario">Direito Previdenciário</option>
-
-                  <option value="outro">Outro assunto</option>
-                </select>
-              </div>
-
-              <!-- MENSAGEM -->
-
-              <div class="form-group form-group-full">
-                <label for="mensagem"> Mensagem </label>
-
-                <textarea
-                  id="mensagem"
-                  name="mensagem"
-                  rows="5"
-                  placeholder="Conte brevemente como podemos ajudar..."
-                ></textarea>
-              </div>
-
-              <!-- BOTÃO -->
-
-              <div class="form-submit">
-                <button type="submit" class="contato-submit">
-                  Enviar mensagem
-
-                  <span> → </span>
-                </button>
-              </div>
-
-              <!-- MENSAGEM DO FORMULÁRIO -->
-
-              <p class="form-message" id="form-message" aria-live="polite"></p>
-            </form>
+        <!-- E-MAIL -->
+        <div class="contato-dado">
+          <div class="contato-icon" aria-hidden="true">@</div>
+          <div>
+            <span>E-mail</span>
+            <a href="#" data-config="email">
+              contato@exemplo.com.br
+            </a>
           </div>
         </div>
-      </section>
+
+        <!-- HORÁRIO -->
+        <div class="contato-dado">
+          <div class="contato-icon" aria-hidden="true">◷</div>
+          <div>
+            <span>Atendimento</span>
+            <p data-config="horario">
+              Segunda a sexta, das 09h às 18h
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- WHATSAPP -->
+      <a
+        href="https://wa.me/5511000000000"
+        class="contato-whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-whatsapp
+        data-mensagem="Olá! Gostaria de entrar em contato com o escritório."
+      >
+        <span>Falar pelo WhatsApp</span>
+        <strong aria-hidden="true">→</strong>
+      </a>
+    </div>
+
+    <!-- FORMULÁRIO -->
+    <div class="contato-form-container">
+      <form class="contato-form" id="contato-form">
+
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(11) 99999-9999"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="">Selecione uma opção</option>
+            <option value="civil">Direito Civil</option>
+            <option value="familia">Direito de Família</option>
+            <option value="trabalhista">Direito Trabalhista</option>
+            <option value="previdenciario">Direito Previdenciário</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </div>
+
+        <div class="form-group form-group-full">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Conte brevemente como podemos ajudar..."
+          ></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="contato-submit">
+            Enviar mensagem
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+        <p
+          class="form-message"
+          id="form-message"
+          aria-live="polite"
+        ></p>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+      
+<!-- SEÇÃO: LOCALIZAÇÃO -->
+<section id="localizacao" class="localizacao-section">
+  <div class="localizacao-container">
+
+    <div class="localizacao-conteudo">
+      <span class="localizacao-label">LOCALIZAÇÃO</span>
+
+      <h2>Onde estamos</h2>
+
+      <p class="localizacao-descricao">
+        Estamos prontos para receber você com atenção,
+        discrição e profissionalismo.
+      </p>
+
+      <div class="localizacao-endereco">
+        <span class="localizacao-icone" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path
+              d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+            <circle
+              cx="12"
+              cy="10"
+              r="2.5"
+              stroke="currentColor"
+              stroke-width="1.6"
+            />
+          </svg>
+        </span>
+
+        <div>
+          <h3>Nosso endereço</h3>
+          <p>Rua Exemplo, 100 — Centro</p>
+          <p>Sua cidade — UF</p>
+          <span class="localizacao-aviso">
+            Endereço demonstrativo
+          </span>
+        </div>
+      </div>
+
+      <a
+        class="localizacao-botao"
+        href="https://www.google.com/maps"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver como chegar
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <div class="localizacao-mapa">
+      <div class="mapa-rua mapa-rua-1"></div>
+      <div class="mapa-rua mapa-rua-2"></div>
+      <div class="mapa-rua mapa-rua-3"></div>
+      <div class="mapa-rua mapa-rua-4"></div>
+
+      <div class="mapa-bloco mapa-bloco-1"></div>
+      <div class="mapa-bloco mapa-bloco-2"></div>
+      <div class="mapa-bloco mapa-bloco-3"></div>
+      <div class="mapa-bloco mapa-bloco-4"></div>
+
+      <div class="mapa-marcador">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path
+            d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+          <circle
+            cx="12"
+            cy="10"
+            r="2.5"
+            stroke="currentColor"
+            stroke-width="1.8"
+          />
+        </svg>
+      </div>
+
+      <span class="mapa-legenda">MAPA ILUSTRATIVO</span>
+    </div>
+
+  </div>
+</section>
+
     </main>
 
     <!-- =====================================================
      RODAPÉ
 ====================================================== -->
 
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- IDENTIDADE -->
+    
+<footer class="footer">
+  <div class="footer-container">
 
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <img src="assets/logo.png" alt="Logo Douglas Santos Advocacia" />
+    <!-- IDENTIDADE -->
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img
+          src="assets/logo.png"
+          alt="Logo do escritório de advocacia"
+        />
 
-            <div>
-              <h3>Douglas Santos</h3>
+        <div>
+          <h3 id="footer-nome-advogado">Nome do Advogado</h3>
+          <p id="footer-titulo-profissional">Advogado</p>
+        </div>
+      </div>
 
-              <p>Advogado</p>
-            </div>
-          </div>
+      <p class="footer-description">
+        Advocacia pautada pela ética, transparência e dedicação,
+        buscando soluções jurídicas responsáveis e personalizadas.
+      </p>
+    </div>
 
-          <p class="footer-description">
-            Advocacia pautada pela ética, transparência e dedicação, buscando
-            soluções jurídicas responsáveis e personalizadas.
+    <!-- NAVEGAÇÃO -->
+    <div class="footer-column">
+      <h4>Navegação</h4>
+
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Áreas de Atuação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <!-- ÁREAS DE ATUAÇÃO -->
+    <div class="footer-column">
+      <h4>Áreas de Atuação</h4>
+
+      <ul>
+        <li><a href="#servicos">Direito Civil</a></li>
+        <li><a href="#servicos">Direito de Família</a></li>
+        <li><a href="#servicos">Direito Trabalhista</a></li>
+        <li><a href="#servicos">Direito Previdenciário</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTATO -->
+    <div class="footer-column">
+      <h4>Contato</h4>
+
+      <ul class="footer-contact">
+        <li>
+          <span>WhatsApp</span>
+          <a
+            href="#contato"
+            data-whatsapp
+            data-mensagem="Olá! Gostaria de entrar em contato com o escritório."
+          >
+            <span id="footer-whatsapp-text">(11) 00000-0000</span>
+          </a>
+        </li>
+
+        <li>
+          <span>E-mail</span>
+          <a href="#" data-config="email">
+            contato@exemplo.com.br
+          </a>
+        </li>
+
+        <li>
+          <span>Atendimento</span>
+          <p data-config="horario">
+            Segunda a sexta, das 09h às 18h
           </p>
-        </div>
+        </li>
+      </ul>
+    </div>
 
-        <!-- NAVEGAÇÃO -->
+  </div>
 
-        <div class="footer-column">
-          <h4>Navegação</h4>
+  <!-- LINHA INFERIOR -->
+  <div class="footer-bottom">
+    <p>
+      © <span id="footer-ano"></span>
+      <span id="footer-nome-escritorio">Nome do Escritório</span>.
+      Todos os direitos reservados.
+    </p>
 
-          <ul>
-            <li>
-              <a href="#home"> Início </a>
-            </li>
+    <p>Desenvolvido com profissionalismo.</p>
+  </div>
+</footer>
 
-            <li>
-              <a href="#sobre"> Sobre </a>
-            </li>
-
-            <li>
-              <a href="#servicos"> Área de Atuação </a>
-            </li>
-
-            <li>
-              <a href="#contato"> Contato </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- ÁREAS -->
-
-        <div class="footer-column">
-          <h4>Áreas de Atuação</h4>
-
-          <ul>
-            <li>
-              <a href="#servicos"> Direito Civil </a>
-            </li>
-
-            <li>
-              <a href="#servicos"> Direito de Família </a>
-            </li>
-
-            <li>
-              <a href="#servicos"> Direito Trabalhista </a>
-            </li>
-
-            <li>
-              <a href="#servicos"> Direito Previdenciário </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- CONTATO -->
-
-        <div class="footer-column">
-          <h4>Contato</h4>
-
-          <ul class="footer-contact">
-            <li>
-              <span> WhatsApp </span>
-
-              <a href="tel:+5511999999999"> (11) 99999-9999 </a>
-            </li>
-
-            <li>
-              <span> E-mail </span>
-
-              <a href="mailto:contato@seuescritorio.com.br">
-                contato@seuescritorio.com.br
-              </a>
-            </li>
-
-            <li>
-              <span> Atendimento </span>
-
-              <p>
-                Segunda a sexta
-                <br />
-                09h às 18h
-              </p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- LINHA INFERIOR -->
-
-      <div class="footer-bottom">
-        <p>© 2026 Douglas Santos Advocacia. Todos os direitos reservados.</p>
-
-        <p>Desenvolvido com profissionalismo.</p>
-      </div>
-    </footer>
 
     <!-- LINK js -->
+     <script src="config.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
